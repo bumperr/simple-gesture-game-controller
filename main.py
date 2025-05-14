@@ -3,13 +3,15 @@ import mediapipe as mp
 from pynput.keyboard import Controller, Key
 import win32gui
 import win32con
+from camera_selector import select_camera_gui
+
 
 keyboard = Controller()
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(max_num_hands=1)
 mp_draw = mp.solutions.drawing_utils
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(select_camera_gui())
 prev_action = None
 
 font = cv2.FONT_HERSHEY_SIMPLEX
