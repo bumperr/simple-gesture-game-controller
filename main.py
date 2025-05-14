@@ -92,9 +92,9 @@ while True:
     cv2.rectangle(frame_resized, (third, 0), (2 * third, resize_height), (255, 255, 0), 2)  
     cv2.rectangle(frame_resized, (2 * third, 0), (resize_width, resize_height), (0, 0, 255), 2)  
     #--------Draw text for each region---------
-    cv2.putText(frame_resized, "<- Move Left", (10, resize_height - 80), font, 0.4, (0, 255, 0), 2, cv2.LINE_AA)  
-    cv2.putText(frame_resized, "Do Nothing", (third + 10, resize_height - 80), font, 0.4, (0, 255, 255), 2, cv2.LINE_AA)  
-    cv2.putText(frame_resized, "-> Move Right", (2 * third + 10, resize_height - 80), font, 0.4, (0, 0, 255), 2, cv2.LINE_AA)  
+    cv2.putText(frame_resized, "<- Move Left", (10, resize_height - 30), font, 0.4, (0, 255, 0), 2, cv2.LINE_AA)  
+    cv2.putText(frame_resized, "Do Nothing", (third + 10, resize_height - 30), font, 0.4, (0, 255, 255), 2, cv2.LINE_AA)  
+    cv2.putText(frame_resized, "-> Move Right", (2 * third + 10, resize_height - 30), font, 0.4, (0, 0, 255), 2, cv2.LINE_AA)  
 
     action_text = ""
 
